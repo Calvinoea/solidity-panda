@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="d-sm-flex align-items-center justify-content-between w-100" style="height: 100vh;">
+        <div class="col-md-4 mx-auto mb-4 mb-sm-0 headline">
+            <span class="text-secondary text-uppercase"><span style="font-weight:bold;">Est. </span> <span style="font-weight:bold;">1984</span></span>
+            <h1 class="display-4 my-4 py-4 mr-4 pr-4 font-weight-bold"><span style="color:#8cdca6;">Neptune </span> <span style="color:#9b5de5"><span style="color:gray">Express</span><span style="color: #9B5DE5;"></span></h1>
+            <a href="#" class="btn px-5 py-3 text-white mt-3 mt-sm-0" style="border-radius: 30px; background-color:#8cdca6;hover:background-color:blue"><b>Shop</b></a>
+        </div>
+        <!-- in mobile remove the clippath -->
+        <div class="col-md-7 h-100 w-60 " style="min-height: 350px; background-image: url(https://cdn4.vectorstock.com/i/1000x1000/64/58/shopping-pentagon-character-cartoon-style-vector-21456458.jpg); background-position: center; background-size: cover;">
+
+        </div>
+    </div>
+
+</body>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+    body {
+        font-family: "Poppins", sans-serif !important;
+    }
+    
+    .headline {
+        left: 130px;
+    }
+    
+    .clipped {
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    
+    @media screen and (max-width: 650px) {
+        .headline {
+            left: 20px;
+        }
+        .clipped {
+            clip-path: none;
+            max-height: 300px !important;
+        }
+    }
+</style>
+
+</html>

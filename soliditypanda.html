@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo {
+            background: url("./solidity-panda-1.png");
+            background-repeat: no-repeat;
+        }
+        /* Font */
+        
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+        /* Design */
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        html {
+            background-color: #ecf9ff;
+        }
+        
+        body {
+            color: #272727;
+            background: white;
+            font-family: 'Quicksand', serif;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0;
+            padding: 1rem;
+        }
+        
+        body:hover {
+            cursor: pointer;
+        }
+        
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+        
+        .btn {
+            color: #ffffff;
+            padding: 0.8rem;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            font-weight: 400;
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+        }
+        
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .cards_item {
+            display: flex;
+            padding: 1rem;
+        }
+        
+        @media (min-width: 40rem) {
+            .cards_item {
+                width: 50%;
+            }
+        }
+        
+        @media (min-width: 56rem) {
+            .cards_item {
+                width: 33.3333%;
+            }
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 0.25rem;
+            box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .card_content {
+            padding: 1rem;
+            background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+        }
+        
+        .card_title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin: 0px;
+        }
+        
+        .card_text {
+            color: #ffffff;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1.25rem;
+            font-weight: 400;
+        }
+        
+        .made_by {
+            font-weight: 400;
+            font-size: 20px;
+            margin-top: 35px;
+            text-align: center;
+        }
+        
+        .tint {
+            display: inline-block;
+        }
+        
+        .tint img {
+            opacity: 0.8
+        }
+        
+        .red-tint {
+            background-color: red;
+        }
+        
+        .blue-tint {
+            background-color: blue;
+        }
+        
+        .orange-tint {
+            background-color: orange;
+        }
+        
+        .green-tint {
+            background-color: green;
+        }
+        
+        .white-tint {
+            background-color: white;
+        }
+        
+        .coral-tint {
+            background-color: coral;
+        }
+        
+        .container {
+            padding: 1vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .background-color p {
+            color: #000;
+            font-family: 'montserrat';
+            font-size: 3vw;
+            font-weight: bold;
+            letter-spacing: 1vw;
+            max-width: 700px;
+            text-align: center;
+            background: rgba(255, 253, 160, 1);
+            background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, #97b1fb 50%, #354e4e 100%) repeat;
+            -webkit-background-clip: text;
+            -ms-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -ms-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            text-fill-color: transparent;
+            -webkit-animation-name: masked-animation;
+            -webkit-animation-duration: 50s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+        }
+        
+        @-webkit-keyframes masked-animation {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -8000px -3000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <center><img text-align: "centre" src="./solidity-panda-1.png" /></center>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+        <div class="container">
+            <div class="background-color">
+                <p>Solidity Panda</p>
+            </div>
+            <p style="margin-left:8%;font-weight:bolder;font-size:18px;color:gray;text-align:center">Learn Solidity and Stake DAO NFTs at the Same Time</p>
+        </div>
+        <br/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image tint red-tint"><img src="data:image/png;base64,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"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">DAO 1</h2>
+                        <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <button class="btn card_btn">Enroll</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image tint blue-tint"><img src="data:image/png;base64,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">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">DAO 2</h2>
+                        <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <button class="btn card_btn">Enroll</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image tint orange-tint"><img src="data:image/png;base64,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">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">DAO 3</h2>
+                        <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <button class="btn card_btn">Enroll</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image tint green-tint"><img src="data:image/png;base64,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">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">DAO 3</h2>
+                        <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <button class="btn card_btn">Enroll</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image tint"><img src="data:image/png;base64,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">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">DAO 4</h2>
+                        <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <button class="btn card_btn">Enroll</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image tint coral-tint"><img src="data:image/png;base64,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">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">DAO 5</h2>
+                        <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <button class="btn card_btn">Enroll</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <h3 class="made_by"> 🐼</h3>
+
+    <ul style="margin-left:30%;display: flex;list-style: none;font-weight:bold;color:gray">
+        <li>
+            <p>Terms of Service</p>
+        </li>
+        <br/> &nbsp;&nbsp;&nbsp;
+        <li>
+            <p>FAQ</p>
+        </li>&nbsp;&nbsp;&nbsp;
+        <br />
+        <li>
+            <p>Curriculum</p>
+        </li>&nbsp;&nbsp;&nbsp;
+        <br />
+        <li>
+            <p>Events</p>
+        </li>&nbsp;&nbsp;&nbsp;
+        <br />
+        <li>
+            <p>Alumni</p>
+        </li>
+    </ul>
+
+</body>
+
+</html>
